@@ -9,5 +9,6 @@ def count_divisors(n: int) -> int:
 
 if __name__ == "__main__":
     n = int(sys.argv[1])
-    print(count_divisors(n))
+    print(count_divisors(n), end="")
+
 
