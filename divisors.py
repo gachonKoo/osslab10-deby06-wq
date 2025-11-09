@@ -1,14 +1,9 @@
 import sys
 
-def count_divisors(n: int) -> int:
-    cnt = 0
-    for i in range(1, n + 1):
-        if n % i == 0:
-            cnt += 1
-    return cnt
+number = int(sys.argv[1])
 
-if __name__ == "__main__":
-    n = int(sys.argv[1])
-    print(count_divisors(n), end="")
+for i in range(1, number + 1):   # 1부터 number까지 반복
+    if number % i == 0:           # 나누어떨어지면 약수
+        print(i, end=" ")
 
-
+print()  # 마지막 줄바꿈
